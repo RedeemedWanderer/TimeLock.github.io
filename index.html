@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeLock DApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 TimeLock DApp 🚀</h1>
+        <button id="connectWalletButton">Connect Wallet</button>
+        <div id="walletAddress"></div>
+        <div class="form-container">
+            <h2>Lock Ether</h2>
+            <input type="number" id="amount" placeholder="Amount in ETH" />
+            <input type="datetime-local" id="unlockTime" />
+            <input type="text" id="withdrawalAddress" placeholder="Withdrawal Address" />
+            <button id="lockEtherButton">Lock Ether</button>
+        </div>
+        <div class="form-container">
+            <h2>Unlock Ether</h2>
+            <button id="unlockEtherButton">Unlock Ether</button>
+        </div>
+        <div id="info"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
